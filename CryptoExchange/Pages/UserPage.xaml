@@ -1,0 +1,6 @@
+<Page x:Class="CryptoExchange.Pages.UserPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Loaded="Page_Loaded">
+ <Grid Margin="12"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+ <StackPanel><TextBlock x:Name="WelcomeText" FontSize="23" FontWeight="Bold"/><TextBlock Text="Ваши заявки на обмен и история операций"/></StackPanel>
+ <DataGrid x:Name="OrdersGrid" Grid.Row="1" IsReadOnly="True"/>
+ <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right"><Button Content="Обновить" Click="Refresh_Click"/><Button Content="Экспорт DOCX" Click="Word_Click"/><Button Content="Экспорт XLSX" Click="Excel_Click"/><Button Content="Экспорт PDF" Click="Pdf_Click"/></StackPanel>
+ </Grid></Page>
